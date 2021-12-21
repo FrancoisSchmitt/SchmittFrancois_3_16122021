@@ -5,36 +5,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="source/stylesheets/index.css">
+    <link rel="stylesheet" href="build/stylesheets/index.css">
+    <link href="build/stylesheets/fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet">
+    <script defer src="build/stylesheets/fontawesome-free-5.15.4-web/js/all.js"></script>
     <title>OhMyFood</title>
 </head>
 
 <body>
     <header>
-        <nav>
+        <nav class="header-content">
             <ul>
-                <li><img src="" alt="Logo"></li>
+                <li>
+                    <img class="header-content-logo" src="build/stylesheets/assets/ohmyfood.png" alt="Logo">
+                </li>
             </ul>
         </nav>
     </header>
     <main>
-        <section>
+        <section class="main-discovery">
             <div>
+                <i class="fas fa-map-marker-alt"></i>
                 <h2>Paris, Belleville</h2>
-                <ul>
-                    <li>Reserver le menu qui vous convient</li>
-                    <li>Découvrez des restaurants d'éxception, sélectionnés par nos soins </li>
-                    <li><button> Explorer nos restaurants</button></li>
-                </ul>
             </div>
+            <ul>
+                <li>Reserver le menu qui vous convient</li>
+                <li>Découvrez des restaurants d'éxception, sélectionnés par nos soins</li>
+                <li><button> Explorer nos restaurants</button></li>
+            </ul>
         </section>
-        <section>
+        <section class="section-functioning">
             <div>
                 <h4>Fonctionnement</h4>
                 <ul>
-                    <li>Choisissez un restaurant</li>
-                    <li>Composer votre menu</li>
-                    <li>Dégustez au restaurant</li>
+                    <li>
+                        <div class="section-functioning-circle">
+                            <p class="section-functioning-number">
+                                1
+                            </p>
+                        </div>
+                        <p>
+                            <i class="fas fa-mobile-alt"></i>Choisissez un restaurant
+                        </p>
+                    </li>
+                    <li>
+                        <div class="section-functioning-circle">
+                            <p class="section-functioning-number">
+                                2
+                            </p>
+                        </div>
+                        <p>
+                            <i class="fas fa-list-ul"></i>Composer votre menu
+                        </p>
+                    </li>
+                    <li>
+                        <div class="section-functioning-circle">
+                            <p class="section-functioning-number">
+                                3
+                            </p>
+                        </div>
+                        <p>
+                            <i class="fas fa-store"></i>Dégustez au restaurant
+                        </p>
+                    </li>
                 </ul>
             </div>
         </section>
