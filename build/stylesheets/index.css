@@ -90,6 +90,33 @@ header {
   }
 }
 
+footer {
+  margin-top: 6%;
+  width: 100%;
+  height: 180px;
+  background-color: #303030;
+  color: white;
+}
+footer h4 {
+  font-family: Shrikhand;
+  margin-bottom: 5%;
+  padding-top: 5%;
+  font-size: 20px;
+}
+footer ul li {
+  margin-bottom: 4%;
+  font-size: 17px;
+}
+footer h4, footer ul li {
+  margin-left: 4%;
+}
+footer ul li svg {
+  margin-right: 3%;
+}
+footer ul li:nth-child(1) svg {
+  margin-right: 5%;
+}
+
 body {
   font-family: "roboto";
 }
@@ -197,12 +224,11 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin-bottom: 40%;
 }
 .section-functioning div {
   margin-top: 5%;
 }
-.section-functioning div h4 {
+.section-functioning div h2 {
   margin-left: 4%;
   font-size: 20px;
   margin-bottom: 5%;
@@ -246,6 +272,67 @@ body {
 }
 .section-functioning div ul li:nth-child(3) {
   background-color: #9356dc38;
+}
+
+.list-restaurant {
+  height: 100%;
+  background-color: #e9ecef;
+}
+.list-restaurant div {
+  margin-top: 4%;
+}
+.list-restaurant div h4 {
+  font-size: 20px;
+  margin-bottom: 5%;
+  font-weight: bold;
+}
+.list-restaurant div ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.list-restaurant div ul li a {
+  font-weight: normal;
+  text-decoration: none;
+  color: black;
+}
+.list-restaurant div ul li {
+  border: solid 1px #F2F2F2;
+  margin-bottom: 5%;
+  width: 90%;
+  height: 100%;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  box-shadow: 0 24px 25px #f2f2f2;
+  list-style-type: none;
+  text-decoration: none;
+}
+.list-restaurant div ul li div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 4%;
+  line-height: 20px;
+}
+.list-restaurant div ul li div svg {
+  font-size: 30px;
+  margin-right: 4%;
+}
+.list-restaurant div ul li p {
+  color: grey;
+  margin-bottom: 4%;
+  font-size: 19px;
+}
+.list-restaurant div ul li img {
+  display: flex;
+  width: 100%;
+  height: 200px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  object-fit: cover;
+}
+.list-restaurant div ul li div, .list-restaurant div ul li p {
+  margin-left: 4%;
 }
 
 /*# sourceMappingURL=index.css.map */

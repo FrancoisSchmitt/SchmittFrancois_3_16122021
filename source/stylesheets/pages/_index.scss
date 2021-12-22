@@ -100,14 +100,12 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
-    // a delete
-    margin-bottom: 40%;
-    //
+
     & div {
         margin-top: 5%;
     }
 
-    & div h4 {
+    & div h2 {
         margin-left: 4%;
         font-size: 20px;
         margin-bottom: 5%;
@@ -159,4 +157,77 @@ body {
         background-color: #9356dc38;
     }
 
+}
+
+
+.list-restaurant{
+    height: 100%;
+    background-color: #e9ecef;
+    
+    & div {
+        margin-top: 4%;
+    }
+
+    & div h4{
+        font-size: 20px;
+        margin-bottom: 5%;
+        font-weight: bold;
+    }
+    & div ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    & div ul li a {
+        font-weight: normal;
+        text-decoration: none;
+        color: black;
+    }
+
+    & div ul li {
+        border: solid 1px #F2F2F2;
+        margin-bottom: 5%;
+        width: 90%;
+        height: 100%;
+        background-color: #FFFFFF;
+        border-radius: 20px;
+        box-shadow: 0 24px 25px #f2f2f2;
+        list-style-type: none;
+        text-decoration: none;
+    }
+
+    & div ul li div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 4%;
+        line-height: 20px;
+    }
+    
+    & div ul li div svg {
+        font-size: 30px;
+        margin-right: 4%;
+    }
+
+    & div ul li p {
+        color: grey;
+        margin-bottom: 4%;
+        font-size: 19px;
+    }
+
+    & div ul li img{
+        display: flex;
+        width: 100%;
+        height: 200px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        object-fit: cover;
+    }
+
+    & div ul li div, & div ul li p{
+        margin-left: 4%;
+    }
+
+   
 }
