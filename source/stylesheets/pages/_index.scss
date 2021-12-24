@@ -1,7 +1,9 @@
 body {
     font-family: "roboto";
 }
-
+header ul li {
+    justify-content: center;
+}
 .main-discovery {
     width: 100%;
     display: flex;
@@ -83,23 +85,13 @@ body {
         text-align: center;
     }
 
-    & li button {
-        height: 50px;
-        border-radius: 40px;
-        color: #ffffff;
-        border: none;
-        box-shadow: 2px 2px 2px;
-        font-weight: bold;
-        background: linear-gradient(to bottom right,#ff79da,#9356dc 80% ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        margin-bottom: 5%;
-        width: 50%;
-    }
 }
 
 .section-functioning {
     width: 100%;
     display: flex;
     flex-direction: column;
+    margin-bottom: 13%;
 
     & div {
         margin-top: 5%;
@@ -163,20 +155,27 @@ body {
 .list-restaurant{
     height: 100%;
     background-color: #e9ecef;
-    
-    & div {
-        margin-top: 4%;
-    }
+    padding-bottom: 15%;
+    padding-top: 2%;
+    margin-top: 5%;
 
-    & div h4{
+    & div h2{
         font-size: 20px;
         margin-bottom: 5%;
         font-weight: bold;
+        margin-left: 4%;
+        padding-top: 15%;
     }
+
     & div ul {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    & div ul h4{
+        font-size: 20px;
+        margin-bottom: 5%;
+        font-weight: bold;
     }
     
     & div ul li a {
@@ -192,7 +191,7 @@ body {
         height: 100%;
         background-color: #FFFFFF;
         border-radius: 20px;
-        box-shadow: 0 24px 25px #f2f2f2;
+        box-shadow: 0 15px 35px #00000026;
         list-style-type: none;
         text-decoration: none;
     }

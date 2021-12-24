@@ -40,6 +40,19 @@ table {
   border-spacing: 0;
 }
 
+button {
+  height: 50px;
+  border-radius: 40px;
+  color: #ffffff;
+  border: none;
+  box-shadow: 2px 2px 2px;
+  font-weight: bold;
+  background: linear-gradient(to bottom right, #ff79da, #9356dc 80%);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  margin-bottom: 5%;
+  width: 50%;
+}
+
 header {
   width: 100%;
   box-shadow: 0px 0px 9px grey;
@@ -62,7 +75,6 @@ header {
 
 .header-content li {
   display: flex;
-  justify-content: center;
 }
 @media screen and (min-width: 768px) {
   .header-content li {
@@ -75,6 +87,11 @@ header {
     display: flex;
     justify-content: center;
   }
+}
+.header-content li a {
+  font-weight: normal;
+  text-decoration: none;
+  color: black;
 }
 .header-content-logo {
   width: 50%;
@@ -91,11 +108,11 @@ header {
 }
 
 footer {
-  margin-top: 6%;
   width: 100%;
   height: 180px;
   background-color: #303030;
   color: white;
+  padding-bottom: 8%;
 }
 footer h4 {
   font-family: Shrikhand;
@@ -115,6 +132,99 @@ footer ul li svg {
 }
 footer ul li:nth-child(1) svg {
   margin-right: 5%;
+}
+
+body {
+  font-family: roboto;
+}
+
+.restaurant-menu-img {
+  background-image: url("assets/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+  width: 100%;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.restaurant-menu {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: -20%;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  background-color: #e9ecef;
+}
+.restaurant-menu h2 {
+  font-family: Shrikhand;
+  border-top-left-radius: 80px 80px;
+  margin-top: 10%;
+  font-size: 25px;
+  display: flex;
+  justify-content: space-around;
+}
+.restaurant-menu h4 {
+  margin-top: 5%;
+  margin-left: 4%;
+  color: grey;
+  padding-bottom: 2%;
+  border-bottom: 1px solid #99e2d0;
+  width: 10%;
+  margin-bottom: 4%;
+}
+.restaurant-menu ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: black;
+}
+.restaurant-menu ul li {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: solid 1px #f2f2f2;
+  margin-bottom: 3%;
+  width: 90%;
+  height: 70px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 24px 25px #f2f2f2;
+  margin-left: 4%;
+}
+.restaurant-menu ul li a {
+  width: 100%;
+  text-decoration: none;
+  color: black;
+}
+.restaurant-menu ul li h3 {
+  width: 90%;
+  margin-left: 3%;
+  margin-top: 3%;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 4%;
+}
+.restaurant-menu ul li div {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  justify-content: space-between;
+  margin-left: 3%;
+}
+.restaurant-menu ul li div p:nth-child(2) {
+  font-weight: bold;
+}
+.restaurant-menu ul li div p:nth-child(1) {
+  color: grey;
+}
+.restaurant-menu ul:nth-child(4) {
+  margin-bottom: 7%;
+}
+.restaurant-menu button {
+  margin: auto;
+  margin-bottom: 15%;
 }
 
 /*# sourceMappingURL=menu.css.map */

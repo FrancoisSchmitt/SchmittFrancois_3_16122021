@@ -40,6 +40,19 @@ table {
   border-spacing: 0;
 }
 
+button {
+  height: 50px;
+  border-radius: 40px;
+  color: #ffffff;
+  border: none;
+  box-shadow: 2px 2px 2px;
+  font-weight: bold;
+  background: linear-gradient(to bottom right, #ff79da, #9356dc 80%);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  margin-bottom: 5%;
+  width: 50%;
+}
+
 header {
   width: 100%;
   box-shadow: 0px 0px 9px grey;
@@ -62,7 +75,6 @@ header {
 
 .header-content li {
   display: flex;
-  justify-content: center;
 }
 @media screen and (min-width: 768px) {
   .header-content li {
@@ -91,11 +103,11 @@ header {
 }
 
 footer {
-  margin-top: 6%;
   width: 100%;
   height: 180px;
   background-color: #303030;
   color: white;
+  padding-bottom: 8%;
 }
 footer h4 {
   font-family: Shrikhand;
@@ -119,6 +131,10 @@ footer ul li:nth-child(1) svg {
 
 body {
   font-family: "roboto";
+}
+
+header ul li {
+  justify-content: center;
 }
 
 .main-discovery {
@@ -207,23 +223,12 @@ body {
   color: grey;
   text-align: center;
 }
-.main-discovery li button {
-  height: 50px;
-  border-radius: 40px;
-  color: #ffffff;
-  border: none;
-  box-shadow: 2px 2px 2px;
-  font-weight: bold;
-  background: linear-gradient(to bottom right, #ff79da, #9356dc 80%);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  margin-bottom: 5%;
-  width: 50%;
-}
 
 .section-functioning {
   width: 100%;
   display: flex;
   flex-direction: column;
+  margin-bottom: 13%;
 }
 .section-functioning div {
   margin-top: 5%;
@@ -277,19 +282,26 @@ body {
 .list-restaurant {
   height: 100%;
   background-color: #e9ecef;
+  padding-bottom: 15%;
+  padding-top: 2%;
+  margin-top: 5%;
 }
-.list-restaurant div {
-  margin-top: 4%;
-}
-.list-restaurant div h4 {
+.list-restaurant div h2 {
   font-size: 20px;
   margin-bottom: 5%;
   font-weight: bold;
+  margin-left: 4%;
+  padding-top: 15%;
 }
 .list-restaurant div ul {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.list-restaurant div ul h4 {
+  font-size: 20px;
+  margin-bottom: 5%;
+  font-weight: bold;
 }
 .list-restaurant div ul li a {
   font-weight: normal;
@@ -303,7 +315,7 @@ body {
   height: 100%;
   background-color: #FFFFFF;
   border-radius: 20px;
-  box-shadow: 0 24px 25px #f2f2f2;
+  box-shadow: 0 15px 35px #00000026;
   list-style-type: none;
   text-decoration: none;
 }
