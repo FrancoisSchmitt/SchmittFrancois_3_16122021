@@ -93,6 +93,13 @@ header {
   text-decoration: none;
   color: black;
 }
+.header-content li {
+  justify-content: space-around;
+  width: 80%;
+}
+.header-content li svg {
+  font-size: 30px;
+}
 .header-content-logo {
   width: 50%;
 }
@@ -138,93 +145,113 @@ body {
   font-family: roboto;
 }
 
-.restaurant-menu-img {
-  background-image: url("assets/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
-  width: 100%;
-  height: 250px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+@keyframes itemAppear {
+  0% {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.menu {
+  max-width: 100%;
+  overflow: hidden;
+  padding: 0 3%;
 }
 
-.restaurant-menu {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  margin-top: -20%;
-  border-top-left-radius: 50px;
-  border-top-right-radius: 50px;
-  background-color: #e9ecef;
-}
-.restaurant-menu h2 {
-  font-family: Shrikhand;
-  border-top-left-radius: 80px 80px;
-  margin-top: 10%;
-  font-size: 25px;
-  display: flex;
-  justify-content: space-around;
-}
-.restaurant-menu h4 {
-  margin-top: 5%;
-  margin-left: 4%;
-  color: grey;
+.menu__title {
+  text-transform: uppercase;
+  position: relative;
   padding-bottom: 2%;
-  border-bottom: 1px solid #99e2d0;
+  font-weight: 400;
+}
+
+.menu__title:after {
+  content: "";
+  background-color: #99e2d0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
   width: 10%;
-  margin-bottom: 4%;
+  height: 20%;
 }
-.restaurant-menu ul {
+
+.menuItem {
+  background-color: #fff;
+  padding: 16px;
   display: flex;
-  flex-direction: column;
+  border-radius: 12px;
+  margin: 16px 0;
+  box-shadow: 0px 0px 16px #0000001a;
+  overflow: hidden;
+  cursor: pointer;
+  animation: itemAppear 0.6s;
+  animation-fill-mode: both;
+  transform: scale(0);
+  max-width: 100%;
+}
+
+.menuItem div:nth-child(1) {
+  flex: 1;
+}
+
+.menuItem div:nth-child(1), .menuItem div:nth-child(1) h4 {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.menuItem div:nth-child(1) h4 {
+  margin: 0;
+}
+
+.menuItem div:nth-child(1) p {
+  margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.menuItem div:nth-child(2) {
+  font-weight: 700;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-left: 80px;
+}
+
+.menuItem-confirmation {
+  background-color: #99e2d0;
+  margin: -16px -80px -16px 16px;
+  width: 64px;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  color: black;
+  transition-duration: 3s;
 }
-.restaurant-menu ul li {
+
+.menuItem:hover .menuItem-confirmation {
+  margin-right: -16px;
+}
+
+.menuItem-confirmation div:nth-child(1) {
+  height: 26px;
+  width: 26px;
+  background-color: #fff;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  border: solid 1px #f2f2f2;
-  margin-bottom: 3%;
-  width: 90%;
-  height: 70px;
-  background-color: #ffffff;
-  border-radius: 15px;
-  box-shadow: 0 24px 25px #f2f2f2;
-  margin-left: 4%;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  transform: rotate(180deg);
+  transition-duration: 3s;
 }
-.restaurant-menu ul li a {
-  width: 100%;
-  text-decoration: none;
-  color: black;
+
+.menuItem:hover .menuItem-confirmation div:nth-child(1) {
+  transform: rotate(0);
 }
-.restaurant-menu ul li h3 {
-  width: 90%;
-  margin-left: 3%;
-  margin-top: 3%;
-  font-weight: bold;
-  font-size: 18px;
-  margin-bottom: 4%;
-}
-.restaurant-menu ul li div {
-  display: flex;
-  flex-direction: row;
-  width: 90%;
-  justify-content: space-between;
-  margin-left: 3%;
-}
-.restaurant-menu ul li div p:nth-child(2) {
-  font-weight: bold;
-}
-.restaurant-menu ul li div p:nth-child(1) {
-  color: grey;
-}
-.restaurant-menu ul:nth-child(4) {
-  margin-bottom: 7%;
-}
-.restaurant-menu button {
-  margin: auto;
-  margin-bottom: 15%;
+
+i {
+  color: #99e2d0;
 }
 
 /*# sourceMappingURL=menu.css.map */

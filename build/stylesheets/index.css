@@ -88,6 +88,11 @@ header {
     justify-content: center;
   }
 }
+.header-content li a {
+  font-weight: normal;
+  text-decoration: none;
+  color: black;
+}
 .header-content-logo {
   width: 50%;
 }
