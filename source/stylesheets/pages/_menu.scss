@@ -1,112 +1,145 @@
 body {
-    font-family: roboto;
+  font-family: roboto;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 @keyframes itemAppear {
-    0% {
-      transform: scale(0)
-    }
-  
-    to {
-      transform: scale(1)
-    }
+  0% {
+    transform: scale(0);
   }
-  .menu {
-    max-width: 100%;
-    overflow: hidden;
-    padding: 0 3%
+
+  to {
+    transform: scale(1);
   }
-  
-  .menu__title {
-    text-transform: uppercase;
-    position: relative;
-    padding-bottom: 2%;
-    font-weight: 400
+}
+
+.menu-restaurant {
+  margin-top: 6%;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.menu-restaurant h2 {
+  font-family: Shrikhand;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.menu-restaurant svg {
+  font-size: 25px;
+  color: black;
+}
+
+.menu-restaurant path  {
+  stroke-width: 15;
+  stroke: black;
+  transition: 3s;
+}
+
+.menu-restaurant svg:hover path  {
+stroke: #FF79DA;
+fill: #FF79DA;
+}
+
+
+
+
+
+.menus {
+  max-width: 100%;
+  overflow: hidden;
+  padding: 0 3%;
+  background-color: #dfdfdf7a;
+
+  & section {
+    margin-top: 8%;
   }
-  
-  .menu__title:after {
-    content: "";
-    background-color: #99e2d0;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 10%;
-    height: 20%;
+
+  & section h3 {
+    margin-bottom: 4%;
   }
-  
-  .menuItem {
-    background-color: #fff;
-    padding: 16px;
+
+  & ul li {
+    flex: 1;
+    min-width: 0;
+    border: solid 0 #f2f2f2;
+    background-color: white;
+    border-radius: 10px;
     display: flex;
-    border-radius: 12px;
-    margin: 16px 0;
-    box-shadow: 0px 0px 16px #0000001a;
-    overflow: hidden;
-    cursor: pointer;
-    animation: itemAppear .6s;
+    width: 100%;
+    height: 70px;
+    animation: itemAppear 0.6s;
     animation-fill-mode: both;
     transform: scale(0);
-    max-width: 100%;
+    box-shadow: 2px 6px 10px #c2c1c1;
+    margin-bottom: 4%;
   }
-  
-  .menuItem div:nth-child(1) {
-    flex: 1
-  }
-  
-  .menuItem div:nth-child(1), .menuItem div:nth-child(1) h4 {
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden
-  }
-  
-  .menuItem div:nth-child(1) h4 {
-    margin: 0
-  }
-  
-  .menuItem div:nth-child(1) p {
-    margin: 0;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden
-  }
-  
-  .menuItem div:nth-child(2) {
-    font-weight: 700;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    padding-left: 80px
-  }
-  
-  .menuItem-confirmation {
-    background-color: #99e2d0;
-    margin: -16px -80px -16px 16px;
-    width: 64px;
 
-    transition-duration: 3s
+  & ul li div:nth-child(1) {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 35px;
+    height: auto;
+    width: 100%;
+    margin-left: 2%;
   }
-  
-  .menuItem:hover .menuItem-confirmation {
-    margin-right: -16px
+
+  & ul li div:nth-child(1) div {
+    display: flex;
+    margin-right: 2%;
   }
-  
-  .menuItem-confirmation div:nth-child(1) {
-    height: 26px;
-    width: 26px;
-    background-color: #fff;
+
+  & ul li div:nth-child(1) div p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 80%;
+    margin-right: 15%;
+  }
+
+  & ul li div:nth-of-type(2) {
+    background-color: #99e2d0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+    color: white;
+    height: auto;
+    flex-direction: column;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 100px;
-    transform: rotate(180deg);
-    transition-duration: 3s
+    width: 0px;
+    transition: 500ms;
   }
-  
-  .menuItem:hover .menuItem-confirmation div:nth-child(1) {
-    transform: rotate(0)
+
+  & ul li:hover div:nth-of-type(2) {
+    background-color: #99e2d0;
+    transform: scale(1);
+    transform-origin: 50% 0%;
+    transition: 800ms;
+    width: 20%;
   }
-  
-  i {
-    color: #99e2d0
+
+  & ul li div svg {
+    opacity: 0;
+    font-size: 1rem;
+    transition: 700ms;
+    position: absolute;
+    bottom: 25px;
   }
-  
+  & ul li:hover div svg {
+    transform: rotate(-360deg);
+    opacity: 1;
+    font-size: 20px;
+    transition: 400ms;
+  }
+}
+
+.menu h3 {
+  text-transform: uppercase;
+  padding-bottom: 2%;
+}
