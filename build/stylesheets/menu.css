@@ -40,7 +40,7 @@ table {
   border-spacing: 0;
 }
 
-.test {
+.btn-main {
   height: 50px;
   border-radius: 40px;
   color: #ffffff;
@@ -296,7 +296,7 @@ main {
   transition: 400ms;
 }
 
-.test:hover {
+.order:hover {
   filter: brightness(1.25);
 }
 
