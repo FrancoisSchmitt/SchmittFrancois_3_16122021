@@ -1,4 +1,4 @@
-button {
+.test {
     height: 50px;
     border-radius: 40px;
     color: #ffffff;
@@ -8,4 +8,6 @@ button {
     background: linear-gradient(to bottom right,#ff79da,#9356dc 80% ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     margin-bottom: 5%;
     width: 50%;
+    cursor: pointer;
 }
+

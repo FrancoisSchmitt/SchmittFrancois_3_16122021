@@ -33,26 +33,43 @@ body {
   color: black;
 }
 
-.menu-restaurant path  {
-  stroke-width: 15;
+.menu-restaurant svg path {
+  stroke-width: 40;
   stroke: black;
+  fill: #dfdfdf7a;
   transition: 3s;
 }
 
-.menu-restaurant svg:hover path  {
-stroke: #FF79DA;
-fill: #FF79DA;
+.menu-restaurant svg:hover path {
+  stroke: #ff79da;
+  fill: #ff79da;
 }
 
+.restaurant-image-one {
+  background-image: url("assets/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+  background-repeat: no-repeat;
+  height: 200px;
+  background-size: cover;
+}
 
-
-
+main {
+  background-color: #f2f2f2;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
 
 .menus {
   max-width: 100%;
   overflow: hidden;
   padding: 0 3%;
-  background-color: #dfdfdf7a;
+  margin-top: -14%;
+
+  & button {
+    margin-top: 7%;
+    margin-left: 25%;
+    margin-bottom: 15%;
+  }
+
 
   & section {
     margin-top: 8%;
@@ -60,6 +77,9 @@ fill: #FF79DA;
 
   & section h3 {
     margin-bottom: 4%;
+    border-bottom: 2px solid green;
+    width: 10%;
+    font-weight: lighter;
   }
 
   & ul li {
@@ -76,6 +96,15 @@ fill: #FF79DA;
     transform: scale(0);
     box-shadow: 2px 6px 10px #c2c1c1;
     margin-bottom: 4%;
+  }
+
+  & ul li div h4,
+  & ul li div span {
+    font-weight: bold;
+  }
+
+  & ul li div p {
+    font-weight: lighter;
   }
 
   & ul li div:nth-child(1) {
@@ -138,6 +167,9 @@ fill: #FF79DA;
     transition: 400ms;
   }
 }
+
+.test:hover {
+  filter: brightness(1.25);}
 
 .menu h3 {
   text-transform: uppercase;
