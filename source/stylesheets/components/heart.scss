@@ -1,0 +1,10 @@
+.fa-heart path {
+    stroke-width: 40;
+    stroke: black;
+    transition: 1.5s;
+  }
+  
+  .fa-heart:hover path {
+    stroke: #ff79da;
+    fill: #ff79da;
+  }

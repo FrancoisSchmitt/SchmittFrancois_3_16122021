@@ -54,6 +54,21 @@ table {
   cursor: pointer;
 }
 
+.order:hover {
+  filter: brightness(1.25);
+}
+
+.fa-heart path {
+  stroke-width: 40;
+  stroke: black;
+  transition: 1.5s;
+}
+
+.fa-heart:hover path {
+  stroke: #ff79da;
+  fill: #ff79da;
+}
+
 header {
   width: 100%;
   box-shadow: 0px 0px 9px grey;
@@ -175,23 +190,30 @@ body {
   color: black;
 }
 
-.menu-restaurant svg path {
-  stroke-width: 40;
-  stroke: black;
+.fa-heart path {
   fill: #dfdfdf7a;
-  transition: 3s;
 }
 
-.menu-restaurant svg:hover path {
-  stroke: #ff79da;
-  fill: #ff79da;
-}
-
-.restaurant-image-one {
-  background-image: url("assets/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+.restaurant-image {
   background-repeat: no-repeat;
   height: 200px;
   background-size: cover;
+}
+
+.palette-du-gout {
+  background-image: url("assets/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+}
+
+.delice-des-sens {
+  background-image: url("assets/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+}
+
+.a-la-francaise {
+  background-image: url("assets/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+}
+
+.la-note-enchantee {
+  background-image: url("assets/stil-u2Lp8tXIcjw-unsplash.jpg");
 }
 
 main {
@@ -216,7 +238,7 @@ main {
 }
 .menus section h3 {
   margin-bottom: 4%;
-  border-bottom: 2px solid green;
+  border-bottom: 2px solid #99E2D0;
   width: 10%;
   font-weight: lighter;
 }
@@ -262,7 +284,7 @@ main {
   margin-right: 15%;
 }
 .menus ul li div:nth-of-type(2) {
-  background-color: #99e2d0;
+  background-color: #99E2D0;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   text-align: center;
@@ -276,7 +298,7 @@ main {
   transition: 500ms;
 }
 .menus ul li:hover div:nth-of-type(2) {
-  background-color: #99e2d0;
+  background-color: #99E2D0;
   transform: scale(1);
   transform-origin: 50% 0%;
   transition: 800ms;
@@ -294,10 +316,6 @@ main {
   opacity: 1;
   font-size: 20px;
   transition: 400ms;
-}
-
-.order:hover {
-  filter: brightness(1.25);
 }
 
 .menu h3 {

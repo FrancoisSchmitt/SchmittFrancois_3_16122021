@@ -40,7 +40,7 @@ table {
   border-spacing: 0;
 }
 
-button {
+.btn-main {
   height: 50px;
   border-radius: 40px;
   color: #ffffff;
@@ -51,6 +51,22 @@ button {
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   margin-bottom: 5%;
   width: 50%;
+  cursor: pointer;
+}
+
+.order:hover {
+  filter: brightness(1.25);
+}
+
+.fa-heart path {
+  stroke-width: 40;
+  stroke: black;
+  transition: 1.5s;
+}
+
+.fa-heart:hover path {
+  stroke: #ff79da;
+  fill: #ff79da;
 }
 
 header {
@@ -235,58 +251,62 @@ header ul li {
   flex-direction: column;
   margin-bottom: 13%;
 }
-.section-functioning div {
-  margin-top: 5%;
-}
 .section-functioning div h2 {
-  margin-left: 4%;
   font-size: 20px;
   margin-bottom: 5%;
   font-weight: bold;
+  margin-left: 4%;
+  padding-top: 10%;
 }
-.section-functioning div ul {
+.section-functioning li {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-}
-.section-functioning div li {
-  display: flex;
-  justify-content: center;
-  background-color: #e9ecef;
+  background-color: #f2f2f2;
   width: 90%;
-  height: 70px;
-  border-radius: 20px;
-  margin-bottom: 5%;
-  margin-left: 5%;
+  height: 60px;
+  border-radius: 15px;
+  margin: auto;
+  margin-bottom: 4%;
 }
-.section-functioning div ul li p {
-  width: 100%;
+.section-functioning ul li span {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: row;
+  margin: auto;
+  width: 65%;
+}
+.section-functioning ul li svg {
+  color: grey;
+}
+.section-functioning ul li svg {
   margin: auto;
 }
-.section-functioning div ul li .section-functioning-number {
-  margin-top: 10%;
-  color: #ffffff;
-}
-.section-functioning div ul li .section-functioning-circle {
+.section-functioning ul li div {
+  display: flex;
   width: 20px;
   height: 20px;
+  color: #ffffff;
   margin: auto;
+  margin-left: -3%;
+  background-color: #9356DC;
   border-radius: 50px;
-  background-color: #9356dc;
 }
-.section-functioning div ul li:nth-child(3) svg {
-  color: #9356dc;
+.section-functioning ul li span {
+  text-justify: auto;
 }
-.section-functioning div ul li:nth-child(3) {
+.section-functioning ul li div p {
+  display: flex;
+  margin: auto;
+  margin-left: 25%;
+}
+.section-functioning div ul li:hover svg {
+  color: #9356DC;
+}
+.section-functioning div ul li:hover {
   background-color: #9356dc38;
 }
 
 .list-restaurant {
   height: 100%;
-  background-color: #e9ecef;
+  background-color: #f2f2f2;
   padding-bottom: 15%;
   padding-top: 2%;
   margin-top: 5%;
@@ -314,17 +334,17 @@ header ul li {
   color: black;
 }
 .list-restaurant div ul li {
-  border: solid 1px #F2F2F2;
+  border: solid 1px #f2f2f2;
   margin-bottom: 5%;
   width: 90%;
   height: 100%;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 20px;
   box-shadow: 0 15px 35px #00000026;
   list-style-type: none;
   text-decoration: none;
 }
-.list-restaurant div ul li div {
+.list-restaurant div ul li div:nth-child(2) {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -348,8 +368,30 @@ header ul li {
   border-top-right-radius: 20px;
   object-fit: cover;
 }
-.list-restaurant div ul li div, .list-restaurant div ul li p {
+.list-restaurant div ul li div:nth-child(2), .list-restaurant div ul li p {
   margin-left: 4%;
+}
+.list-restaurant div ul li div:nth-child(1) div {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 35px;
+  width: 25%;
+  background: #99E2D0;
+  margin-left: 60%;
+  margin-top: 5%;
+}
+.list-restaurant div ul li div:nth-child(1) div span {
+  margin: auto;
+  color: #17483C;
+}
+
+.fa-heart {
+  margin-top: auto;
+}
+.fa-heart path {
+  fill: #fff;
 }
 
 /*# sourceMappingURL=index.css.map */
