@@ -4,6 +4,12 @@ body {
 header ul li {
     justify-content: center;
 }
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
 .main-discovery {
     width: 100%;
     display: flex;
@@ -25,31 +31,29 @@ header ul li {
     }
 
     & div {
+        width: 100%;
+        padding-top: 2%;
         background-color: #e9ecef;
+        height: 30px;
         display: flex;
         justify-content: center;
-        padding-top: 3%;
-        padding-bottom: 3%;
-
-        @include media-min(768px) {
-            display: flex;
-            background-color: #e9ecef;
-            justify-content: center;
-            padding-top: 3%;
-            padding-bottom: 3%;
-        }
-
-        @include media-min(992px) {
-            display: flex;
-            background-color: #e9ecef;
-            justify-content: center;
-            padding-top: 3%;
-            padding-bottom: 3%;
-        }
-        & svg {
-            margin-right: 4%;
-        }
+        padding-bottom: 2%;
     }
+    & form {
+        display: flex;
+        width: 50%;
+    }
+
+    & form label {
+        margin: auto;
+    }
+
+    & form input {
+        border: none;
+        width: 75%;
+        background-color: #e9ecef;
+    }
+
     & ul {
         display: flex;
         flex-direction: column;
@@ -73,10 +77,11 @@ header ul li {
         }
     }
     & li:nth-child(1) {
-        margin-left: 25%;
-        margin-right: 25%;
+        margin-left: 20%;
+        margin-right: 20%;
         font-weight: bold;
         text-align: center;
+        font-size: 22px;
     }
     & li:nth-child(2) {
         margin-left: 10%;
@@ -150,8 +155,6 @@ header ul li {
         background-color: #9356dc38;
     }
 }
-
-
 
 .list-restaurant {
     height: 100%;
@@ -239,12 +242,12 @@ header ul li {
         background: $tertiare_color;
         margin-left: 60%;
         margin-top: 5%;
-      }
-      
-      & div ul li div:nth-child(1) div span {
+    }
+
+    & div ul li div:nth-child(1) div span {
         margin: auto;
-        color: #17483C;
-      }
+        color: #17483c;
+    }
 }
 
 .fa-heart {

@@ -34,13 +34,16 @@
   <main>
     <section class="main-discovery">
       <div>
-        <i class="fas fa-map-marker-alt"></i>
-        <h2>Paris, Belleville</h2>
+        <form method="post" action="#">
+          <label for="site-search"><i class="fas fa-map-marker-alt"></i></label>
+          <input class="search" type="search" id="site-search" name="search" aria-label="Search through site content"
+            placeholder="Paris, Belleville">
+        </form>
       </div>
       <ul>
         <li>Reserver le menu qui vous convient</li>
         <li>Découvrez des restaurants d'éxception, sélectionnés par nos soins</li>
-        <li><button class="btn-main order" type="button">Commander</button></li>
+        <li><button class="btn-main order" type="button">Explorer nos restaurants</button></li>
       </ul>
     </section>
     <section class="section-functioning">
@@ -137,7 +140,7 @@
       <li><i class="fas fa-utensils"></i>Proposer un restaurant</li>
       <li><i class="fas fa-hands-helping"></i>Devenir partenaire</li>
       <li>Mention légales</li>
-      <li>Contact</li>
+      <li><a href="mailto:email@example.com">Contact</a></li>
     </ul>
   </footer>
 </body>
