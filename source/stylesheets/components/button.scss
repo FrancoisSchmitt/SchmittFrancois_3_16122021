@@ -13,6 +13,10 @@
     margin-bottom: 5%;
     width: 50%;
     cursor: pointer;
+
+    @include media-min(768px) {
+        width: 30%;
+    }
 }
 
 .order:hover {

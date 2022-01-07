@@ -52,6 +52,11 @@ table {
   width: 50%;
   cursor: pointer;
 }
+@media screen and (min-width: 768px) {
+  .btn-main {
+    width: 30%;
+  }
+}
 
 .order:hover {
   filter: brightness(1.25);
@@ -180,7 +185,7 @@ header {
 }
 @media screen and (min-width: 768px) {
   .header-content-logo {
-    width: 35%;
+    width: 25%;
   }
 }
 @media screen and (min-width: 992px) {
@@ -191,10 +196,15 @@ header {
 
 footer {
   width: 100%;
-  height: 180px;
+  height: auto;
   background-color: #303030;
   color: white;
   padding-bottom: 8%;
+}
+@media screen and (min-width: 768px) {
+  footer {
+    padding-bottom: 0;
+  }
 }
 footer h4 {
   font-family: Shrikhand;
@@ -203,8 +213,13 @@ footer h4 {
   font-size: 20px;
 }
 footer ul li {
-  margin-bottom: 4%;
+  padding-bottom: 4%;
   font-size: 17px;
+}
+@media screen and (min-width: 768px) {
+  footer ul li:nth-child(2) svg {
+    margin-right: 4%;
+  }
 }
 footer h4, footer ul li {
   margin-left: 4%;

@@ -21,6 +21,7 @@ a {
         display: flex;
         flex-direction: column;
         background-color: #f8f9fa;
+        height: 280px;
     }
 
     @include media-min(992px) {
@@ -42,6 +43,9 @@ a {
     & form {
         display: flex;
         width: 50%;
+        @include media-min(768px) {
+            width: 30%;
+        }
     }
 
     & form label {
@@ -97,6 +101,11 @@ a {
     flex-direction: column;
     margin-bottom: 13%;
 
+    @include media-min(768px) {
+        width: 60%;
+        margin-bottom: 13%;
+        margin: auto;
+    }
     & div h2 {
         font-size: 20px;
         margin-bottom: 5%;
@@ -113,6 +122,10 @@ a {
         border-radius: 15px;
         margin: auto;
         margin-bottom: 4%;
+
+        @include media-min(768px) {
+            width: 80%;
+        }
     }
 
     & ul li span {
@@ -137,6 +150,10 @@ a {
         margin-left: -3%;
         background-color: $primary_color;
         border-radius: 50px;
+
+        @include media-min(768px) {
+            margin-left: -2%;
+        }
     }
 
     & ul li span {
@@ -162,6 +179,10 @@ a {
     padding-bottom: 15%;
     padding-top: 2%;
     margin-top: 5%;
+    
+    @include media-min(768px) {
+        padding-bottom: 5%;
+    }
 
     & div h2 {
         font-size: 20px;
@@ -169,12 +190,24 @@ a {
         font-weight: bold;
         margin-left: 4%;
         padding-top: 15%;
+
+        @include media-min(768px) {
+            padding-top: 5%;
+            text-align: center;
+            margin-left: 0;
+        }
     }
 
     & div ul {
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        @include media-min(768px) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+        }
     }
     & div ul h4 {
         font-size: 20px;
@@ -198,6 +231,12 @@ a {
         box-shadow: 0 15px 35px #00000026;
         list-style-type: none;
         text-decoration: none;
+
+        @include media-min(768px) {
+            width: 40%;
+            margin: auto;
+            margin-bottom: 4%;
+        }
     }
 
     & div ul li div:nth-child(2) {
@@ -242,6 +281,13 @@ a {
         background: $tertiare_color;
         margin-left: 60%;
         margin-top: 5%;
+
+        @include media-min(768px) {
+            margin-left: 20%;
+            height: 35px;
+            width: 15%;
+            margin-top: 2%;
+        }
     }
 
     & div ul li div:nth-child(1) div span {
@@ -258,7 +304,6 @@ a {
     }
 }
 
-
 .loader {
     animation: loader 3s;
     animation-delay: 2s;
@@ -271,91 +316,86 @@ a {
     display: flex;
     justify-content: center;
     margin: auto;
-  }
-  
-  .loader div {
+}
+
+.loader div {
     display: flex;
     flex-direction: column;
     margin: auto;
-  }
-  
-  .loader div ul {
+}
+
+.loader div ul {
     display: flex;
     flex-direction: row;
     margin: auto;
-  }
-  
-  .loader div ul:nth-child(1) {
+}
+
+.loader div ul:nth-child(1) {
     font-family: Shrikhand;
-  }
-  
-  .loader div ul:nth-child(1) li {
+}
+
+.loader div ul:nth-child(1) li {
     margin: 2px;
-  }
-  
-  .loader div ul:nth-child(1) li:nth-child(1) {
+}
+
+.loader div ul:nth-child(1) li:nth-child(1) {
     animation: Bounces 1s;
     animation-fill-mode: both;
-  }
-  
-  .loader div ul:nth-child(1) li:nth-child(2) {
+}
+
+.loader div ul:nth-child(1) li:nth-child(2) {
     animation: Bounces 1s;
     animation-fill-mode: both;
-    animation-delay: .2s;
-  }
-  
-  .loader div ul:nth-child(1) li:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.loader div ul:nth-child(1) li:nth-child(3) {
     animation: Bounces 1s;
     animation-fill-mode: both;
-    animation-delay: .3s;
-  
-  }
-  
-  .loader div ul:nth-child(1) li:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+.loader div ul:nth-child(1) li:nth-child(4) {
     animation: Bounces 1s;
     animation-fill-mode: both;
-    animation-delay: .4s;
-  }
-  
-  .loader div ul:nth-child(1) li:nth-child(5) {
+    animation-delay: 0.4s;
+}
+
+.loader div ul:nth-child(1) li:nth-child(5) {
     animation: Bounces 1s;
     animation-fill-mode: both;
-    animation-delay: .5s;
-  }
-  
-  .loader div ul:nth-child(1) li:nth-child(6) {
+    animation-delay: 0.5s;
+}
+
+.loader div ul:nth-child(1) li:nth-child(6) {
     animation: Bounces 1s;
     animation-fill-mode: both;
-    animation-delay: .6s;
-  }
-  
-  .loader div ul:nth-child(1) li:nth-child(7) {
+    animation-delay: 0.6s;
+}
+
+.loader div ul:nth-child(1) li:nth-child(7) {
     animation: Bounces 1s;
     animation-fill-mode: both;
-    animation-delay: .7s;
-  }
-  
-  .loader div ul:nth-child(1) li:nth-child(8) {
+    animation-delay: 0.7s;
+}
+
+.loader div ul:nth-child(1) li:nth-child(8) {
     animation: Bounces 1s;
     animation-fill-mode: both;
-    animation-delay: .8s;
-  }
-  
-  
-  .loader div ul:nth-child(2) {
+    animation-delay: 0.8s;
+}
+
+.loader div ul:nth-child(2) {
     margin-top: 10%;
-    animation-delay: .2s;
-  }
-  
-  .loader div ul:nth-child(2) li {
+    animation-delay: 0.2s;
+}
+
+.loader div ul:nth-child(2) li {
     animation: rotation 2s;
     animation-fill-mode: both;
-    background-color: #99E2D0;
+    background-color: #99e2d0;
     width: 20px;
     height: 20px;
     border-radius: 20px;
     margin: 4px;
-  
-  
-  }
-  
+}
