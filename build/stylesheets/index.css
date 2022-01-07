@@ -57,6 +57,66 @@ table {
   filter: brightness(1.25);
 }
 
+@keyframes Bounces {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(10px);
+  }
+  75% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(360deg);
+    height: 30px;
+    width: 30px;
+    background-color: #99E2D0;
+  }
+  25% {
+    transform: rotate(0deg);
+    height: 10px;
+    width: 10px;
+    background-color: #FF79DA;
+  }
+  50% {
+    transform: rotate(0deg);
+    height: 30px;
+    width: 30px;
+    background-color: #9356DC;
+  }
+  75% {
+    transform: rotate(360deg);
+    height: 10px;
+    width: 10px;
+    background-color: #FF79DA;
+  }
+  100% {
+    transform: translateY(0);
+    height: 20px;
+    width: 20px;
+    background-color: #99E2D0;
+  }
+}
+@keyframes loader {
+  100% {
+    z-index: -1;
+    opacity: 0;
+  }
+}
+@keyframes itemAppear {
+  0% {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
 .fa-heart path {
   stroke-width: 40;
   stroke: black;
@@ -390,6 +450,102 @@ a {
 }
 .fa-heart path {
   fill: #fff;
+}
+
+.loader {
+  animation: loader 3s;
+  animation-delay: 2s;
+  animation-fill-mode: both;
+  z-index: 2;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.loader div {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.loader div ul {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+
+.loader div ul:nth-child(1) {
+  font-family: Shrikhand;
+}
+
+.loader div ul:nth-child(1) li {
+  margin: 2px;
+}
+
+.loader div ul:nth-child(1) li:nth-child(1) {
+  animation: Bounces 1s;
+  animation-fill-mode: both;
+}
+
+.loader div ul:nth-child(1) li:nth-child(2) {
+  animation: Bounces 1s;
+  animation-fill-mode: both;
+  animation-delay: 0.2s;
+}
+
+.loader div ul:nth-child(1) li:nth-child(3) {
+  animation: Bounces 1s;
+  animation-fill-mode: both;
+  animation-delay: 0.3s;
+}
+
+.loader div ul:nth-child(1) li:nth-child(4) {
+  animation: Bounces 1s;
+  animation-fill-mode: both;
+  animation-delay: 0.4s;
+}
+
+.loader div ul:nth-child(1) li:nth-child(5) {
+  animation: Bounces 1s;
+  animation-fill-mode: both;
+  animation-delay: 0.5s;
+}
+
+.loader div ul:nth-child(1) li:nth-child(6) {
+  animation: Bounces 1s;
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+
+.loader div ul:nth-child(1) li:nth-child(7) {
+  animation: Bounces 1s;
+  animation-fill-mode: both;
+  animation-delay: 0.7s;
+}
+
+.loader div ul:nth-child(1) li:nth-child(8) {
+  animation: Bounces 1s;
+  animation-fill-mode: both;
+  animation-delay: 0.8s;
+}
+
+.loader div ul:nth-child(2) {
+  margin-top: 10%;
+  animation-delay: 0.2s;
+}
+
+.loader div ul:nth-child(2) li {
+  animation: rotation 2s;
+  animation-fill-mode: both;
+  background-color: #99E2D0;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  margin: 4px;
 }
 
 /*# sourceMappingURL=index.css.map */
