@@ -17,8 +17,13 @@
     @include media-min(768px) {
         width: 30%;
     }
+    @include media-min(992px) {
+        width: 20%;
+    }
+    
 }
 
 .order:hover {
     filter: brightness(1.25);
+    box-shadow: 2px 6px 10px #6c6c6c;
 }

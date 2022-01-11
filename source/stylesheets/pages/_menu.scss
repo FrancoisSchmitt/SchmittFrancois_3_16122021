@@ -5,7 +5,6 @@ body {
   padding: 0;
 }
 
-
 a {
   text-decoration: none;
   color: #fff;
@@ -16,6 +15,9 @@ a {
   display: flex;
   justify-content: space-between;
   width: 90%;
+  @include media-min(768px) {
+    margin-bottom: 4%;
+  }
 }
 
 .menu-restaurant h2 {
@@ -37,16 +39,20 @@ a {
   background-repeat: no-repeat;
   height: 200px;
   background-size: cover;
+
+  @include media-min(768px) {
+    height: 300px;
+  }
 }
 
 .palette-du-gout {
   background-image: url("assets/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
 }
-.delice-des-sens{
+.delice-des-sens {
   background-image: url("assets/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
 }
 
-.a-la-francaise{
+.a-la-francaise {
   background-image: url("assets/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
 }
 
@@ -58,6 +64,11 @@ main {
   background-color: #f2f2f2;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
+
+  @include media-min(992px) {
+    width: 90%;
+    margin: auto;
+  }
 }
 
 .menus {
@@ -65,16 +76,31 @@ main {
   overflow: hidden;
   padding: 0 3%;
   margin-top: -14%;
+  @include media-min(992px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 
   & button {
     margin-top: 7%;
     margin-left: 25%;
     margin-bottom: 15%;
-  }
 
+    @include media-min(768px) {
+      margin: auto;
+      margin-bottom: 15%;
+      margin-left: 35%;
+    }
+  }
 
   & section {
     margin-top: 8%;
+
+    @include media-min(992px) {
+      width: 45%;
+      margin: auto;
+    }
   }
 
   & section h3 {

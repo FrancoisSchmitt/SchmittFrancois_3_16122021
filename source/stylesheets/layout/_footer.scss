@@ -16,9 +16,18 @@ footer {
         font-size: 20px;
     }
 
+    & ul {
+        @include media-min(992px) {
+         display: flex;
+         flex-direction: row;
+        }
+    }
     & ul li {
         padding-bottom: 4%;
         font-size: 17px;
+        @include media-min(992px) {
+            width: 40%;
+           }
     }
 
     & ul li:nth-child(2) svg{

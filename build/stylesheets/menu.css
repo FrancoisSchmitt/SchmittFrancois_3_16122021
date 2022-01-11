@@ -57,9 +57,15 @@ table {
     width: 30%;
   }
 }
+@media screen and (min-width: 992px) {
+  .btn-main {
+    width: 20%;
+  }
+}
 
 .order:hover {
   filter: brightness(1.25);
+  box-shadow: 2px 6px 10px #6c6c6c;
 }
 
 @keyframes Bounces {
@@ -177,6 +183,11 @@ header {
   justify-content: space-around;
   width: 80%;
 }
+@media screen and (min-width: 992px) {
+  .header-content li {
+    width: 65%;
+  }
+}
 .header-content li svg {
   font-size: 30px;
 }
@@ -190,7 +201,7 @@ header {
 }
 @media screen and (min-width: 992px) {
   .header-content-logo {
-    width: 25%;
+    margin-left: 20%;
   }
 }
 
@@ -212,9 +223,20 @@ footer h4 {
   padding-top: 5%;
   font-size: 20px;
 }
+@media screen and (min-width: 992px) {
+  footer ul {
+    display: flex;
+    flex-direction: row;
+  }
+}
 footer ul li {
   padding-bottom: 4%;
   font-size: 17px;
+}
+@media screen and (min-width: 992px) {
+  footer ul li {
+    width: 40%;
+  }
 }
 @media screen and (min-width: 768px) {
   footer ul li:nth-child(2) svg {
@@ -249,6 +271,11 @@ a {
   justify-content: space-between;
   width: 90%;
 }
+@media screen and (min-width: 768px) {
+  .menu-restaurant {
+    margin-bottom: 4%;
+  }
+}
 
 .menu-restaurant h2 {
   font-family: Shrikhand;
@@ -269,6 +296,11 @@ a {
   background-repeat: no-repeat;
   height: 200px;
   background-size: cover;
+}
+@media screen and (min-width: 768px) {
+  .restaurant-image {
+    height: 300px;
+  }
 }
 
 .palette-du-gout {
@@ -292,6 +324,12 @@ main {
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
 }
+@media screen and (min-width: 992px) {
+  main {
+    width: 90%;
+    margin: auto;
+  }
+}
 
 .menus {
   max-width: 100%;
@@ -299,13 +337,33 @@ main {
   padding: 0 3%;
   margin-top: -14%;
 }
+@media screen and (min-width: 992px) {
+  .menus {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
 .menus button {
   margin-top: 7%;
   margin-left: 25%;
   margin-bottom: 15%;
 }
+@media screen and (min-width: 768px) {
+  .menus button {
+    margin: auto;
+    margin-bottom: 15%;
+    margin-left: 35%;
+  }
+}
 .menus section {
   margin-top: 8%;
+}
+@media screen and (min-width: 992px) {
+  .menus section {
+    width: 45%;
+    margin: auto;
+  }
 }
 .menus section h3 {
   margin-bottom: 4%;

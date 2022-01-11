@@ -23,6 +23,9 @@ a {
         background-color: #f8f9fa;
         height: 280px;
     }
+    @include media-min(992px) {
+        height: auto;
+    }
 
     @include media-min(992px) {
         width: 100%;
@@ -179,7 +182,7 @@ a {
     padding-bottom: 15%;
     padding-top: 2%;
     margin-top: 5%;
-    
+
     @include media-min(768px) {
         padding-bottom: 5%;
     }
