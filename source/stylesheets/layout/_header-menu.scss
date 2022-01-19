@@ -16,7 +16,6 @@ header {
 }
 
 .header-content {
-
     li {
         display: flex;
 
@@ -39,11 +38,10 @@ header {
     & li {
         justify-content: space-around;
         width: 80%;
-    
+
         @include media-min(992px) {
             width: 65%;
         }
-       
     }
 
     & li svg {
@@ -57,8 +55,8 @@ header {
             width: 25%;
         }
 
-    @include media-min(992px) {
-    margin-left: 20%;
-    }
+        @include media-min(992px) {
+            margin-left: 20%;
+        }
     }
 }
